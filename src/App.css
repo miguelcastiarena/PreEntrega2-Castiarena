@@ -1,16 +1,21 @@
-.App {
-  text-align: center;
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.listaNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  list-style: none;
+  padding: 2%;
 }
 
 .App-header {
@@ -19,7 +24,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -28,11 +33,64 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart { 
+  filter: invert();
+}
+
+.ItemList {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+ 
+}
+
+.card {
+  background-color: rgb(124, 124, 124);
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  margin: 2%;
+  width: 25%;
+  border-radius: 1.5%;
+  
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 2%;
+}
+
+.imgDetail {
+  width: 30%;
+  margin: 3%;
+}
+
+.detailContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contador {
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  border: solid #496a73 2px;
+  width: 150px;
+}
+
+.btn-contador {
+  width: 50px;
+  height: 50px;
+  
 }
