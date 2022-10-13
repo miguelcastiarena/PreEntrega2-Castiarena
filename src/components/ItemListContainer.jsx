@@ -1,15 +1,21 @@
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
 import { productos } from './productos/productos';
+import { useParams  } from "react-router-dom"; 
 
 const ItemListContainer = () => {
     const [items, setItems] = useState([])
 
+    const {seccionElegida} = useParams();
+
+    console.log(seccionElegida)
+
 useEffect (()=>{
     const cargarProductos = () => {
         return new Promise ((res,rej) => {
+            const prodFiltrados = productos.filter((prod)=> prod.seccion === seccionElegida)
             setTimeout(() => {
-                res(productos)
+                res(seccionElegida ? prodFiltrados : productos)
             }, 1000);
             
         })
@@ -21,13 +27,16 @@ useEffect (()=>{
     .catch((error)=>{
         console.log(error)
     })
-}, [])
+}, [seccionElegida])
 
     
     return (
-        <div className="ItemListContainer">
-            <ItemList items={items}/>
-        </div>
+        <main>
+            <div className="ItemListContainer">
+                <ItemList items={items}/>
+            </div>
+        </main>
+        
         )
 }
 

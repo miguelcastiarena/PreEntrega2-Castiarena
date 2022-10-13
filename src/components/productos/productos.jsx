@@ -5,7 +5,7 @@ export const productos = [
         "precio": 18861, 
         "stock": 10, 
         "estado": "Nuevo", 
-        "seccion": "escalada",
+        seccion: "escalada",
         "imagen": "./img/edelrid-casco-zodiac.jpeg"
         
     },
@@ -15,7 +15,7 @@ export const productos = [
         "precio": 37111, 
         "stock": 8, 
         "estado": "Nuevo", 
-        "seccion": "escalada",
+        seccion: "escalada",
         "imagen": "./img/petzl-casco-sirocco.jpeg"
         
     },
@@ -25,7 +25,7 @@ export const productos = [
         "precio": 45876, 
         "stock": 12, 
         "estado": "Nuevo", 
-        "seccion": "escalada",
+        seccion: "escalada",
         "imagen": "./img/la-sportiva-pies-de-gato-miura-vs.jpeg"
         
     },
@@ -35,7 +35,7 @@ export const productos = [
         "precio": 31756, 
         "stock": 14, 
         "estado": "Nuevo", 
-        "seccion": "escalada",
+        seccion: "escalada",
         "imagen": "./img/la-sportiva-pies-de-gato-cobra.jpeg"
     
     },
@@ -45,7 +45,7 @@ export const productos = [
         "precio": 34765, 
         "stock": 12, 
         "estado": "Nuevo", 
-        "seccion": "escalada",
+        seccion: "escalada",
         "imagen": "./img/petzl-arnes-corax.jpeg"
         
     },
@@ -55,7 +55,7 @@ export const productos = [
         "precio": 26842, 
         "stock": 16, 
         "estado": "Nuevo", 
-        "seccion": "escalada",
+        seccion: "escalada",
         "imagen": "./img/edelrid-arnes-prisma.jpeg"
     
     },
@@ -65,7 +65,7 @@ export const productos = [
         "precio": 23458, 
         "stock": 8, 
         "estado": "Nuevo", 
-        "seccion": "esqui",
+        seccion: "esqui",
         "imagen": "./img/salewa-casco-vert.jpeg"
         
     },
@@ -75,7 +75,7 @@ export const productos = [
         "precio": 27500, 
         "stock": 10, 
         "estado": "Nuevo", 
-        "seccion": "esqui",
+        seccion: "esqui",
         "imagen": "./img/casco-anon-greeta.jpeg"
         
         
@@ -86,7 +86,7 @@ export const productos = [
         "precio": 65873, 
         "stock": 4, 
         "estado": "Nuevo", 
-        "seccion": "esqui",
+        seccion: "esqui",
         "imagen": "./img/salomon-botas-esqui-alpino-quest-access-80.jpeg"   
         
         
@@ -97,7 +97,7 @@ export const productos = [
         "precio": 89690, 
         "stock": 6, 
         "estado": "Nuevo", 
-        "seccion": "esqui",
+        seccion: "esqui",
         "imagen": "./img/botas-dalbello-lupo.jpeg"
         
     
@@ -108,7 +108,7 @@ export const productos = [
         "precio": 123768, 
         "stock": 5, 
         "estado": "Nuevo", 
-        "seccion": "esqui",
+        seccion: "esqui",
         "imagen": "./img/esqui-rossignol-soul-7-hd.jpeg"
         
         
@@ -119,7 +119,7 @@ export const productos = [
         "precio": 120543, 
         "stock": 3, 
         "estado": "Nuevo", 
-        "seccion": "esqui",
+        seccion: "esqui",
         "imagen": "./img/esquies-fisher-ranger.jpeg"
         
         
@@ -130,7 +130,7 @@ export const productos = [
         "precio": 13789, 
         "stock": 15, 
         "estado": "Nuevo", 
-        "seccion": "bicicletas",
+        seccion: "bicicletas",
         "imagen": "./img/casco-bicicleta-shimano.jpeg"
         
         
@@ -141,7 +141,7 @@ export const productos = [
         "precio": 16743, 
         "stock": 13, 
         "estado": "Nuevo", 
-        "seccion": "bicicletas",
+        seccion: "bicicletas",
         "imagen": "./img/casco-ciclista-vairo-blaze-negro-715040283048518-2.jpeg"
         
         
@@ -152,7 +152,7 @@ export const productos = [
         "precio": 127863, 
         "stock": 8, 
         "estado": "Nuevo", 
-        "seccion": "bicicletas",
+        seccion: "bicicletas",
         "imagen": "./img/bicicleta-zenith.jpeg"
     
         
@@ -163,7 +163,7 @@ export const productos = [
         "precio": 143290, 
         "stock": 6, 
         "estado": "Nuevo", 
-        "seccion": "bicicletas",
+        seccion: "bicicletas",
         "imagen": "./img/bicicleta-vairo.jpeg"
         
        
@@ -174,7 +174,7 @@ export const productos = [
         "precio": 3211, 
         "stock": 7, 
         "estado": "Nuevo", 
-        "seccion": "bicicletas",
+        seccion: "bicicletas",
         "imagen": "./img/inflador-de-mano-shimano.jpeg"
         
         
@@ -185,7 +185,7 @@ export const productos = [
         "precio": 2167, 
         "stock": 8, 
         "estado": "Nuevo", 
-        "seccion": "bicicletas",
+        seccion: "bicicletas",
         "imagen": "./img/inflador-atletic.jpeg"
         
         

@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
 import { productos } from './productos/productos';
 
 const ItemDetailContainer = () => {
     const [item, setItem] = useState({})
 
+    const {id} = useParams();
+
 useEffect (()=>{
     const cargarProducto = () => {
         return new Promise ((res,rej) => {
-            let producto = productos.find((prod)=> prod.id ===1)
+            let producto = productos.find((prod)=> prod.id === parseInt(id) )
             setTimeout(() => {
                 res(producto)
             }, 1000);
@@ -23,7 +26,7 @@ useEffect (()=>{
     .catch((error)=>{
         console.log(error)
     })
-}, [])
+}, [id])
 
     
     return (

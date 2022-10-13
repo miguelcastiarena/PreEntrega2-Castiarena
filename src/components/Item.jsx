@@ -1,7 +1,8 @@
 import Contador from "./Contador";
+import { Link } from "react-router-dom";
 
 const Item = ({prod}) => {
-    console.log(prod)
+    
     return (
         
         <div className="card">
@@ -13,6 +14,7 @@ const Item = ({prod}) => {
                 <h4>${prod.precio}</h4>
                 <h5>#{prod.seccion}</h5>
                 <Contador stock={prod.stock}/>
+                <Link to={`/item/${prod.id}`}>Ver Producto</Link>
             </div>
             
         </div>
