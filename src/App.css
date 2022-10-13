@@ -85,13 +85,29 @@ li {
 
 .imgDetail {
   width: 30%;
-  margin: 3%;
+  margin: 2%;
+  
+  
 }
 
 .detailContainer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  background-color: #496a73;
+}
+
+.detailContainer h1, h2, h3, h4, p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  padding: 1%;
+}
+
+.itemListContainer {
+  background-color: #496a73;
 }
 
 .contador {

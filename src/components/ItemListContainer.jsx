@@ -32,7 +32,7 @@ useEffect (()=>{
     
     return (
         <main>
-            <div className="ItemListContainer">
+            <div className="itemListContainer">
                 <ItemList items={items}/>
             </div>
         </main>

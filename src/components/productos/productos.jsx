@@ -6,7 +6,7 @@ export const productos = [
         "stock": 10, 
         "estado": "Nuevo", 
         seccion: "escalada",
-        "imagen": "./img/edelrid-casco-zodiac.jpeg"
+        "imagen": "/img/edelrid-casco-zodiac.jpeg"
         
     },
     { 
@@ -16,7 +16,7 @@ export const productos = [
         "stock": 8, 
         "estado": "Nuevo", 
         seccion: "escalada",
-        "imagen": "./img/petzl-casco-sirocco.jpeg"
+        "imagen": "/img/petzl-casco-sirocco.jpeg"
         
     },
     { 
@@ -26,7 +26,7 @@ export const productos = [
         "stock": 12, 
         "estado": "Nuevo", 
         seccion: "escalada",
-        "imagen": "./img/la-sportiva-pies-de-gato-miura-vs.jpeg"
+        "imagen": "/img/la-sportiva-pies-de-gato-miura-vs.jpeg"
         
     },
     { 
@@ -36,7 +36,7 @@ export const productos = [
         "stock": 14, 
         "estado": "Nuevo", 
         seccion: "escalada",
-        "imagen": "./img/la-sportiva-pies-de-gato-cobra.jpeg"
+        "imagen": "/img/la-sportiva-pies-de-gato-cobra.jpeg"
     
     },
     { 
@@ -46,7 +46,7 @@ export const productos = [
         "stock": 12, 
         "estado": "Nuevo", 
         seccion: "escalada",
-        "imagen": "./img/petzl-arnes-corax.jpeg"
+        "imagen": "/img/petzl-arnes-corax.jpeg"
         
     },
     { 
@@ -56,7 +56,7 @@ export const productos = [
         "stock": 16, 
         "estado": "Nuevo", 
         seccion: "escalada",
-        "imagen": "./img/edelrid-arnes-prisma.jpeg"
+        "imagen": "/img/edelrid-arnes-prisma.jpeg"
     
     },
     { 
@@ -66,7 +66,7 @@ export const productos = [
         "stock": 8, 
         "estado": "Nuevo", 
         seccion: "esqui",
-        "imagen": "./img/salewa-casco-vert.jpeg"
+        "imagen": "/img/salewa-casco-vert.jpeg"
         
     },
     { 
@@ -76,7 +76,7 @@ export const productos = [
         "stock": 10, 
         "estado": "Nuevo", 
         seccion: "esqui",
-        "imagen": "./img/casco-anon-greeta.jpeg"
+        "imagen": "/img/casco-anon-greeta.jpeg"
         
         
     },
@@ -87,7 +87,7 @@ export const productos = [
         "stock": 4, 
         "estado": "Nuevo", 
         seccion: "esqui",
-        "imagen": "./img/salomon-botas-esqui-alpino-quest-access-80.jpeg"   
+        "imagen": "/img/salomon-botas-esqui-alpino-quest-access-80.jpeg"   
         
         
     },
@@ -98,7 +98,7 @@ export const productos = [
         "stock": 6, 
         "estado": "Nuevo", 
         seccion: "esqui",
-        "imagen": "./img/botas-dalbello-lupo.jpeg"
+        "imagen": "/img/botas-dalbello-lupo.jpeg"
         
     
     },
@@ -109,7 +109,7 @@ export const productos = [
         "stock": 5, 
         "estado": "Nuevo", 
         seccion: "esqui",
-        "imagen": "./img/esqui-rossignol-soul-7-hd.jpeg"
+        "imagen": "/img/esqui-rossignol-soul-7-hd.jpeg"
         
         
     },
@@ -120,7 +120,7 @@ export const productos = [
         "stock": 3, 
         "estado": "Nuevo", 
         seccion: "esqui",
-        "imagen": "./img/esquies-fisher-ranger.jpeg"
+        "imagen": "/img/esquies-fisher-ranger.jpeg"
         
         
     },
@@ -131,7 +131,7 @@ export const productos = [
         "stock": 15, 
         "estado": "Nuevo", 
         seccion: "bicicletas",
-        "imagen": "./img/casco-bicicleta-shimano.jpeg"
+        "imagen": "/img/casco-bicicleta-shimano.jpeg"
         
         
     },
@@ -142,7 +142,7 @@ export const productos = [
         "stock": 13, 
         "estado": "Nuevo", 
         seccion: "bicicletas",
-        "imagen": "./img/casco-ciclista-vairo-blaze-negro-715040283048518-2.jpeg"
+        "imagen": "/img/casco-ciclista-vairo-blaze-negro-715040283048518-2.jpeg"
         
         
     },
@@ -153,7 +153,7 @@ export const productos = [
         "stock": 8, 
         "estado": "Nuevo", 
         seccion: "bicicletas",
-        "imagen": "./img/bicicleta-zenith.jpeg"
+        "imagen": "/img/bicicleta-zenith.jpeg"
     
         
     },
@@ -164,7 +164,7 @@ export const productos = [
         "stock": 6, 
         "estado": "Nuevo", 
         seccion: "bicicletas",
-        "imagen": "./img/bicicleta-vairo.jpeg"
+        "imagen": "/img/bicicleta-vairo.jpeg"
         
        
     },
@@ -175,7 +175,7 @@ export const productos = [
         "stock": 7, 
         "estado": "Nuevo", 
         seccion: "bicicletas",
-        "imagen": "./img/inflador-de-mano-shimano.jpeg"
+        "imagen": "/img/inflador-de-mano-shimano.jpeg"
         
         
     },
@@ -186,7 +186,7 @@ export const productos = [
         "stock": 8, 
         "estado": "Nuevo", 
         seccion: "bicicletas",
-        "imagen": "./img/inflador-atletic.jpeg"
+        "imagen": "/img/inflador-atletic.jpeg"
         
         
     }
