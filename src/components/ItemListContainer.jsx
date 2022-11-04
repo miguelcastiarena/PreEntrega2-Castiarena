@@ -8,15 +8,13 @@ const ItemListContainer = () => {
 
     const {seccionElegida} = useParams();
 
-    console.log(seccionElegida)
-
 useEffect (()=>{
     const cargarProductos = () => {
         return new Promise ((res,rej) => {
             const prodFiltrados = productos.filter((prod)=> prod.seccion === seccionElegida)
             setTimeout(() => {
                 res(seccionElegida ? prodFiltrados : productos)
-            }, 1000);
+            }, 400);
             
         })
     }

@@ -1,6 +1,18 @@
+import { useContext, useState } from "react";
+import { Link } from "react-router-dom";
 import Contador from "./Contador";
+import CartContext from "../context/CartContext"
 
 const ItemDetail = ({ item }) => {
+  const [unidades, setUnidades] = useState(0);
+
+  const { addToCart } = useContext(CartContext)
+
+  const prueba = (numero) => {
+    setUnidades(numero)
+    addToCart( item, numero)
+  }
+
   return (
     <div className="detailContainer">
       <img src={item.imagen} alt={item.nombre} className="imgDetail" />
@@ -13,7 +25,16 @@ const ItemDetail = ({ item }) => {
         <p>
           Descripcion general del producto. Estado: {item.estado}
         </p>
-        <Contador />
+        {
+          unidades === 0 ? (
+            <Contador prueba={prueba} stock={item.stock}/>
+          ) : (
+            <Link to="/carrito">Ir al carrito</Link>
+          )
+
+        }
+        
+
       </div>
       
     </div>

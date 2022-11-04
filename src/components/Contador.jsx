@@ -15,6 +15,10 @@ const Contador = (props) => {
             <button onClick={sumar} className="btn-contador">+</button>
             <button className="btn-contador" disabled>{counter}</button>
             <button onClick={restar} className="btn-contador">-</button>
+            {counter > 0 
+            && 
+            (<button onClick={()=>props.prueba({counter})}>Agregar al carrito</button>) 
+            }
         </div>
         
         

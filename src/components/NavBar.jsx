@@ -9,7 +9,7 @@ const NavBar = () => {
                 <NavLink to='/seccion/escalada'>Escalada</NavLink>
                 <NavLink to='/seccion/esqui'>Esquí y Snowboard</NavLink>
                 <NavLink to='/seccion/bicicletas'>Bicicletas</NavLink>
-                
+                <NavLink to='form'>Contacto</NavLink>
                 <Link to='/carrito'>
                     <CartWidget />
                 </Link>

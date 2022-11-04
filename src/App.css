@@ -136,3 +136,10 @@ li {
   'opsz' 48,
 
 }
+
+.form {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
