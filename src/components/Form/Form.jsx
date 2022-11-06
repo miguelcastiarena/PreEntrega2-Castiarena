@@ -7,6 +7,9 @@ const Form = () => {
   const [nombre, setNombre] = useState("");
   const [apellido, setApellido] = useState("");
   const [loading, setLoading] = useState(false)
+  const [telefono, setTelefono] = useState("")
+  const [email, setEmail] = useState("")
+  const [email2, setEmail2] = useState("")
 
   const [orderId, setOrderId] = useState('')
 
@@ -40,13 +43,24 @@ const Form = () => {
   const handleChangeApellido = (e) => {
     setApellido(e.target.value);
   };
+
+  const handleChangeTelefono = (e) => {
+    setTelefono(e.target.value)
+  }
+
+  const handleChangeEmail = (e) => {
+    setEmail(e.target.value)
+  }
+  const handleChangeEmail2 = (e) => {
+    setEmail2(e.target.value);
+  }
  
 
   if (orderId) {
     return (
       <div>
         <h2>Tu compra a sido realizada exitosamente, </h2>
-        <h2>Tu codigo de seguimiento es ${orderId}</h2>
+        <h2>Tu codigo de seguimiento es {orderId}</h2>
       </div>
     ) 
   } else {
@@ -67,6 +81,28 @@ const Form = () => {
           onChange={handleChangeApellido}
           value={apellido}
         />
+        <input
+          type="text"
+          name="telefono"
+          placeholder="Telefono"
+          onChange={handleChangeTelefono}
+          value={telefono}
+        />
+        <input
+          type="text"
+          name="email"
+          placeholder="E-mail"
+          onChange={handleChangeEmail}
+          value={email}
+        />
+        <input
+          type="text"
+          name="email2"
+          placeholder="Repetir E-mail"
+          onChange={handleChangeEmail2}
+          value={email2}
+        />
+      
         <button>{loading ? 'Enviando...' : 'Enviar'}</button>
       </form>
     </div>

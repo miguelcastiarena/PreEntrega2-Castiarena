@@ -1,6 +1,6 @@
 # E-commerce de tienda de Montaña
 
-![](public/img/logo.png)
+![](./public/img/logo.png)
 Descripción general: Tienda online creada como trabajo final de mi curso de ReactJs, similar a otra que hice para el curso de Js, y está ideada pensando de una tienda local que vende articulos deportivos de montaña.
 
 Este proyecto fué creado con [Create React App](https://github.com/facebook/create-react-app).

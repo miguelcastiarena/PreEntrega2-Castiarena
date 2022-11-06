@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { database } from './services/firebaseConfig';
 import { collection, getDocs } from 'firebase/firestore';
+//import logo from '../../public/img/logo.png'
 
 const NavBar = () => {
     const [secciones, setSecciones] = useState([])
@@ -27,12 +28,17 @@ const NavBar = () => {
 
     return (
         <nav className="nav">
-            <Link to='/'>La Bolsa del Deporte</Link>
+            <div>
+                <Link to='/'>La Bolsa del Deporte</Link>    
+            </div>
+            
+            
             <ul className="listaNav">
                 {secciones.map((cat) => (
                     <NavLink key={cat.id} to={`/seccion/${cat.path}`}>{cat.name}</NavLink>
                 ))}        
             </ul>
+            
             <Link to='/carrito'>
                 <CartWidget />
             </Link>
