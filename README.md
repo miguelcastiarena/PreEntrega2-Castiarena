@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# E-commerce de tienda de Montaña
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](public/img/logo.png)
+Descripción general: Tienda online creada como trabajo final de mi curso de ReactJs, similar a otra que hice para el curso de Js, y está ideada pensando de una tienda local que vende articulos deportivos de montaña.
 
-## Available Scripts
+Este proyecto fué creado con [Create React App](https://github.com/facebook/create-react-app).
 
-In the project directory, you can run:
+## Librerías utilizadas:
 
-### `npm start`
+- [Firebase](https://firebase.google.com/)
+Se creó una base de datos con firebase y se cargan los datos de los productos desde esta, pudiendo cargarse ordenes de compra desde la app.
+- [React-router-dom](https://reactrouter.com/en/v6.3.0/getting-started/installation)
+Para generar la navegación dentro de la pagina en sus distintas secciones.
+- [React-toastify](https://fkhadra.github.io/)
+Librería para generar mensajes de alerta.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Funcionalidades del proyecto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- El usuario puede navegar por tres secciones distintas a las que se dedica la tienda, viendo los productos pertencientes a cada seccion, o bien ver todos los productos.
+- Se puede ingresar a ver detalles de cada producto, con imagenes, precio y estado.
+- Desde el detalle se puede agregar el producto elejido a un carrito, seleccionando la cantidad deseada y con limite según stock.
+- Se puede navegar por la pagina y seguir agregando otros productos o cambiar la cantidad de los ya seleccionados.
+- Se puede ver la compra elejida en el carrito con las cantidades, precios subtotales y total de la compra.
+- Se puede generar una orden de compra que se carga en Firebase a través del formulario cargando la información del comprador.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Pasos para correr el proyecto local
+1. Clonar el repositorio desde github
+```
+git clone https://github.com/miguelcastiarena/PreEntrega2-Castiarena.git
+```
+2. Abrirlo en algun editor de codigo (Visual Studio Code u otro) e instalar las dependencias.
+```
+npm install
+```
+3. Correr el proyecto de manera local
+```
+npm start
+```
