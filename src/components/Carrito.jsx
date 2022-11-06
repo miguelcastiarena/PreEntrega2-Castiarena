@@ -2,10 +2,8 @@ import { useContext } from "react";
 import {CartContext} from "../context/CartContext"
 import { Link } from 'react-router-dom';
 
-
-
 const Carrito =()=>{
-    const { carrito, borrarUno } = useContext(CartContext);
+    const { carrito, borrarUno, precioTotal } = useContext(CartContext);
 
     if (carrito.length === 0) {
         return (
@@ -32,9 +30,12 @@ const Carrito =()=>{
                             <button onClick={()=> borrarUno(prod.id)}>Quitar del carrito</button>
                         </div>
                         
+                        
                     </div>
                 ))
             }
+            <h2>Valor total de la compra: {precioTotal()}</h2>
+            <Link to='/form'>Finalizar la compra</Link>
         </div>
     )
 }

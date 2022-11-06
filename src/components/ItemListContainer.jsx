@@ -55,24 +55,3 @@ useEffect (()=>{
 }
 
 export default ItemListContainer;
-
-// const cargarProductos = () => {
-//     return new Promise ((res,rej) => {
-//         const prodFiltrados = productos.filter((prod)=> prod.seccion === seccionElegida)
-//         setTimeout(() => {
-//             res(seccionElegida ? prodFiltrados : productos)
-//         }, 500);
-        
-//     })
-// }
-// cargarProductos()
-// .then((res)=>{
-//     setItems(res)
-// })
-// .catch((error)=>{
-//     console.log(error)
-// })
-// .finally (()=> {
-//     setLoader(false)
-// })
-// return () => setLoader(true)    

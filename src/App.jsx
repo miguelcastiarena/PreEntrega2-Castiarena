@@ -3,7 +3,7 @@ import './App.css';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import Carrito from './components/Carrito';
 import Form from './components/Form/Form';
 import Provider from './context/CartContext';
@@ -29,10 +29,7 @@ function App() {
             </div>
       </BrowserRouter>
 
-    </Provider>
-
-    
-    
+    </Provider> 
   );
 }
 

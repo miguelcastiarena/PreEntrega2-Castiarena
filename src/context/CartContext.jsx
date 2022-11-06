@@ -51,16 +51,29 @@ const sumarCantidad = (prodAgregado) => {
         return num
     }
 
+    const precioTotal = () => {
+        let num = 0
+        const carrito2 = [...carrito]
+        carrito2.forEach((prod)=> {
+            num = num + prod.precio * prod.cantidad
+        })
+        return num
+        }
+
+        
     const prodCantidad = (id) => {
         const producto = carrito.find((prod)=>prod.id === id)
         return producto?.cantidad
     }
 
+    
+
     return(
-        <CartContext.Provider value={{carrito, addToCart, borrarCarrito, borrarUno, totalUnidades, prodCantidad}}>
+        <CartContext.Provider value={{carrito, addToCart, borrarCarrito, borrarUno, totalUnidades, prodCantidad, precioTotal}}>
             {props.children}
         </CartContext.Provider>
     )
 }
+
 
 export default Provider;

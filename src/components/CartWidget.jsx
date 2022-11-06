@@ -8,10 +8,7 @@ const CartWidget = () => {
   
   return (
     <div >
-      <span className="material-symbols-outlined">
-      
-shopping_cart
-</span> 
+      <span className="material-symbols-outlined">shopping_cart</span> 
 <span> {total > 0 && totalUnidades()}</span>
     </div>
   );
