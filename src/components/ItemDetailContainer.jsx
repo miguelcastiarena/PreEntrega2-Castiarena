@@ -6,6 +6,8 @@ import { productos } from './productos/productos';
 const ItemDetailContainer = () => {
     const [item, setItem] = useState({})
 
+    const [loader, setLoader] = useState(true)
+
     const {id} = useParams();
 
 useEffect (()=>{
@@ -26,13 +28,24 @@ useEffect (()=>{
     .catch((error)=>{
         console.log(error)
     })
+    .finally(()=>{
+        setLoader(false)
+    })
+    return ()=> setLoader(true)
 }, [id])
 
     
     return (
-        <div className="ItemDetailContainer">
-            <ItemDetail item={item}/>
+        <div>
+            {
+                loader ? <h3>Cargando....</h3>
+            :
+            <div className="ItemDetailContainer">
+                <ItemDetail item={item}/>
+            </div>
+            }
         </div>
+        
         )
 }
 

@@ -143,3 +143,11 @@ li {
   justify-content: center;
   align-items: center;
 }
+
+.carrito {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #496a73;
+}

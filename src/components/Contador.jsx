@@ -1,15 +1,20 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 
-const Contador = (props) => {
+const Contador = ({stock, initial = 1, onAdd}) => {
     let [counter, setCounter] = useState(0)
 
     const sumar = () => {
-        counter < props.stock && setCounter(counter +1)
+        counter < stock && setCounter(counter +1)
     }
 
     const restar = () => {
-        counter > 0 && setCounter(counter -1)
+        counter > 1 && setCounter(counter -1)
     }
+
+useEffect(()=>{
+    setCounter(initial)
+}, [initial])
+
     return (
         <div className="contador">
             <button onClick={sumar} className="btn-contador">+</button>
@@ -17,7 +22,7 @@ const Contador = (props) => {
             <button onClick={restar} className="btn-contador">-</button>
             {counter > 0 
             && 
-            (<button onClick={()=>props.prueba({counter})}>Agregar al carrito</button>) 
+            (<button onClick={()=>onAdd(counter)}>Agregar al carrito</button>) 
             }
         </div>
         

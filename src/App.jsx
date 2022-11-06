@@ -27,7 +27,7 @@ function App() {
               </header>
 
             </div>
-          </BrowserRouter>
+      </BrowserRouter>
 
     </Provider>
 

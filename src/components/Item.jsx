@@ -1,4 +1,3 @@
-import Contador from "./Contador";
 import { Link } from "react-router-dom";
 
 const Item = ({prod}) => {
@@ -13,7 +12,6 @@ const Item = ({prod}) => {
                 <h2>{prod.nombre}</h2>
                 <h4>${prod.precio}</h4>
                 <h5>#{prod.seccion}</h5>
-                <Contador stock={prod.stock}/>
                 <Link to={`/item/${prod.id}`}>Ver Producto</Link>
             </div>
             
