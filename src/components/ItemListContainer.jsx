@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
-import { productos } from './productos/productos';
 import { useParams  } from "react-router-dom"; 
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { database } from "../components/services/firebaseConfig"
+
 
 const ItemListContainer = () => {
     const [items, setItems] = useState([])
@@ -11,26 +13,28 @@ const ItemListContainer = () => {
     const {seccionElegida} = useParams();
 
 useEffect (()=>{
-    const cargarProductos = () => {
-        return new Promise ((res,rej) => {
-            const prodFiltrados = productos.filter((prod)=> prod.seccion === seccionElegida)
-            setTimeout(() => {
-                res(seccionElegida ? prodFiltrados : productos)
-            }, 500);
-            
-        })
-    }
-    cargarProductos()
+                     
+    const collectionProd = collection(database, "productos")
+    const q = query(collectionProd, where("seccion", "==", seccionElegida || "" ))
+
+    getDocs(seccionElegida ? q : collectionProd)
     .then((res)=>{
-        setItems(res)
+        const products = res.docs.map((prod)=>{
+            return {
+                id: prod.id,
+                ...prod.data(),
+            }
+        })
+        setItems(products)
     })
     .catch((error)=>{
         console.log(error)
     })
-    .finally (()=> {
+    .finally(()=>{
         setLoader(false)
     })
-    return () => setLoader(true)
+    return () => setLoader(true) 
+
 }, [seccionElegida])
 
     
@@ -51,3 +55,24 @@ useEffect (()=>{
 }
 
 export default ItemListContainer;
+
+// const cargarProductos = () => {
+//     return new Promise ((res,rej) => {
+//         const prodFiltrados = productos.filter((prod)=> prod.seccion === seccionElegida)
+//         setTimeout(() => {
+//             res(seccionElegida ? prodFiltrados : productos)
+//         }, 500);
+        
+//     })
+// }
+// cargarProductos()
+// .then((res)=>{
+//     setItems(res)
+// })
+// .catch((error)=>{
+//     console.log(error)
+// })
+// .finally (()=> {
+//     setLoader(false)
+// })
+// return () => setLoader(true)    
